@@ -1,0 +1,87 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Rankmi Design · undefined</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="Check the [documentation](https://docusaurus.io) for how to use Docusaurus."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Rankmi Design · undefined"/><meta property="og:type" content="website"/><meta property="og:url" content="https://sandrafp.github.io/app-react-doc/"/><meta property="og:description" content="Check the [documentation](https://docusaurus.io) for how to use Docusaurus."/><meta property="og:image" content="https://sandrafp.github.io/app-react-doc/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://sandrafp.github.io/app-react-doc/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/app-react-doc/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://sandrafp.github.io/app-react-doc/blog/atom.xml" title="undefined Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://sandrafp.github.io/app-react-doc/blog/feed.xml" title="undefined Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/app-react-doc/js/scrollSpy.js"></script><link rel="stylesheet" href="/app-react-doc/css/main.css"/><script src="/app-react-doc/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/app-react-doc/"><img class="logo" src="/app-react-doc/img/favicon.ico"/><h2 class="headerTitleWithLogo"></h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive siteNavItemActive"><a href="/app-react-doc/docs/doc1" target="_self">Docs</a></li><li class=""><a href="/app-react-doc/docs/doc4" target="_self">API</a></li><li class=""><a href="/app-react-doc/help" target="_self">Help</a></li><li class=""><a href="/app-react-doc/blog/" target="_self">Blog</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Docusaurus</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Docusaurus</h3><ul class=""><li class="navListItem navListItemActive"><a class="navItem" href="/app-react-doc/docs/doc1">Example Page lorem ipsum dolor</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">First Category</h3><ul class=""><li class="navListItem"><a class="navItem" href="/app-react-doc/docs/doc2">document number 2</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Second Category</h3><ul class=""><li class="navListItem"><a class="navItem" href="/app-react-doc/docs/doc3">This is document number 3</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">Rankmi Design</h1></header><article><div><span><p>Check the <a href="https://docusaurus.io">documentation</a> for how to use Docusaurus.</p>
+<h2><a class="anchor" aria-hidden="true" id="lorem"></a><a href="#lorem" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Lorem</h2>
+<p>esto es un ejemplo para revisar el funcionamiento</p>
+<h2><a class="anchor" aria-hidden="true" id="mauris-in-code"></a><a href="#mauris-in-code" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Mauris In Code</h2>
+<pre><code class="hljs">Mauris vestibulum ullamcorper nibh, ut semper purus pulvinar ut. Donec volutpat <span class="hljs-keyword">orci </span>sit amet mauris malesuada, non pulvinar augue aliquam. Vestibulum ultricies <span class="hljs-built_in">at</span> urna ut suscipit. Morbi iaculis, erat <span class="hljs-built_in">at</span> imperdiet semper, ipsum nulla sodales erat, eget tincidunt <span class="hljs-keyword">justo </span>dui quis <span class="hljs-keyword">justo. </span>Pellentesque <span class="hljs-keyword">dictum </span><span class="hljs-keyword">bibendum </span><span class="hljs-keyword">diam </span><span class="hljs-built_in">at</span> aliquet. Sed pulvinar, dolor quis finibus <span class="hljs-keyword">ornare, </span>eros odio facilisis erat, eu rhoncus nunc dui sed ex. Nunc gravida dui massa, sed <span class="hljs-keyword">ornare </span>arcu tincidunt sit amet. Maecenas efficitur sapien neque, a laoreet libero feugiat ut.
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="nulla"></a><a href="#nulla" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Nulla</h2>
+<p>Nulla facilisi. Maecenas sodales nec purus eget posuere. Sed sapien quam, pretium a risus in, porttitor dapibus erat. Sed sit amet fringilla ipsum, eget iaculis augue. Integer sollicitudin tortor quis ultricies aliquam. Suspendisse fringilla nunc in tellus cursus, at placerat tellus scelerisque. Sed tempus elit a sollicitudin rhoncus. Nulla facilisi. Morbi nec dolor dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras et aliquet lectus. Pellentesque sit amet eros nisi. Quisque ac sapien in sapien congue accumsan. Nullam in posuere ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin lacinia leo a nibh fringilla pharetra.</p>
+<h2><a class="anchor" aria-hidden="true" id="orci"></a><a href="#orci" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Orci</h2>
+<p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin venenatis lectus dui, vel ultrices ante bibendum hendrerit. Aenean egestas feugiat dui id hendrerit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur in tellus laoreet, eleifend nunc id, viverra leo. Proin vulputate non dolor vel vulputate. Curabitur pretium lobortis felis, sit amet finibus lorem suscipit ut. Sed non mollis risus. Duis sagittis, mi in euismod tincidunt, nunc mauris vestibulum urna, at euismod est elit quis erat. Phasellus accumsan vitae neque eu placerat. In elementum arcu nec tellus imperdiet, eget maximus nulla sodales. Curabitur eu sapien eget nisl sodales fermentum.</p>
+<h2><a class="anchor" aria-hidden="true" id="phasellus"></a><a href="#phasellus" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Phasellus</h2>
+<h4><a class="anchor" aria-hidden="true" id="props"></a><a href="#props" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Props</h4>
+<p>You can specify the button's attributes styles by setting the props in button tag.</p>
+<table>
+<thead>
+<tr><th>Attribute</th><th>Type</th><th>Description</th><th>Values</th></tr>
+</thead>
+<tbody>
+<tr><td>variant</td><td>ButtonVariant</td><td>(optional) Define styles for state. Default: &quot;Primay&quot;</td><td>&quot;Primary&quot;, &quot;Secondary&quot;, &quot;Success&quot;, &quot;Danger&quot;, &quot;Warning&quot;, &quot;Info&quot;</td></tr>
+<tr><td>outline</td><td>boolean</td><td>(optional) Define styles for variant. Default: &quot;false&quot;</td><td>&quot;true&quot;, &quot;false&quot;</td></tr>
+<tr><td>size</td><td>ButtonSizes</td><td>(optional) Define styles for size. Default: &quot;Md&quot;</td><td>&quot;Xs&quot;, &quot;Sm&quot;, &quot;Md&quot;, &quot;Lg&quot;</td></tr>
+<tr><td>block</td><td>boolean</td><td>(optional) Define display of button tag. Default: &quot;false&quot;</td><td>&quot;true&quot;, &quot;false&quot;</td></tr>
+<tr><td>type</td><td>ButtonTypes</td><td>(optional) Define type for button tag. Default: button</td><td>&quot;button&quot;, &quot;submit&quot;, &quot;reset&quot;</td></tr>
+<tr><td>color</td><td>ButtonColors</td><td>(optional) Define aditional color palette for button tag. Default: unset</td><td>Red&quot;, Blue&quot;, Green&quot;, Grey&quot;, &quot;Yellow&quot;</td></tr>
+<tr><td>opacity</td><td>ButtonOpacity</td><td>(optional) Define opacity of ButtonColors.value, Default: &quot;null&quot;</td><td>&quot;Opacity75&quot;, &quot;Opacity50&quot;, &quot;Opacity25</td></tr>
+<tr><td>ariaLabel</td><td>string</td><td>(opcitional), Define accessibility complementary label</td><td></td></tr>
+<tr><td>className</td><td>string</td><td>(optional), Define the class for styles and helpers utilities.</td><td></td></tr>
+<tr><td></td></tr>
+</tbody>
+</table>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-next button" href="/app-react-doc/docs/doc2"><span>document number 2</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#lorem">Lorem</a></li><li><a href="#mauris-in-code">Mauris In Code</a></li><li><a href="#nulla">Nulla</a></li><li><a href="#orci">Orci</a></li><li><a href="#phasellus">Phasellus</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/app-react-doc/" class="nav-home"><img src="/app-react-doc/img/favicon.ico" width="66" height="58"/></a><div><h5>Docs</h5><a href="/app-react-doc/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/app-react-doc/docs/en/doc2.html">Guides (or other categories)</a><a href="/app-react-doc/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/app-react-doc/en/users.html">User Showcase</a><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/app-react-doc/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/app-react-doc/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2019 Your Name or Your Company Name</section></footer></div></body></html>

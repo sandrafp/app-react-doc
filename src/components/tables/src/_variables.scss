@@ -1,0 +1,77 @@
+// Variables should follow the `$component-state-property-size` for consistent naming.
+
+// Static colors
+$color-blue: #2684ff;
+$color-blue-lighten: #9ecffa;
+$color-blue-darken: #213f68;
+$color-red: #ec5b56;
+$color-red-lighten: #f58383;
+$color-red-darken: #e50f0f;
+$color-green: #36b37e;
+$color-green-lighten: #60d9a6;
+$color-green-darken: #0c9159;
+$color-yellow: #ffc400;
+$color-lighten-yellow: #ffc887;
+$color-yellow-darken: #fea92c;
+$color-grey: #aaa9a9;
+$color-lighten-grey: #dcdcdc;
+$color-grey-darken: #808080;
+
+// Theme colors
+$primary: $color-blue !default;
+$secondary: $color-blue-lighten !default;
+$success: $color-green !default;
+$info: $color-blue !default;
+$warning: $color-yellow !default;
+$danger: $color-red !default;
+
+// Template colors
+// TODO: delete variables and add map-merge
+$color-primary: #ffffff;
+$color-default: #202020;
+
+// Texs colors
+$text-white: $color-primary !default;
+$text-default: $color-default !default;
+$text-secondary: $color-grey-darken !default;
+$text-highlight: $color-blue !default;
+$text-decoration: $color-blue-lighten !default;
+
+// Fonts
+$font-ptsans: "PT Sans", sans-serif;
+$font-arial: Arial;
+$font-size-base: 1rem !default; // 16px
+
+$font-weight-normal: 400 !default;
+$font-weight-bold: 600 !default;
+$font-weight-base: $font-weight-normal !default;
+
+$h1-font-size: $font-size-base * 2.25 !default;
+$h2-font-size: $font-size-base * 2 !default;
+$h3-font-size: $font-size-base * 1.75 !default;
+$h4-font-size: $font-size-base * 1.5 !default;
+$h5-font-size: $font-size-base * 1.25 !default;
+$h6-font-size: $font-size-base * 1.13 !default;
+
+// Spacing
+$spacing-0: 0 !default;
+$spacing-xs: 0.3125rem;
+$spacing-sm: 0.625rem;
+$spacing-md: 1.25rem;
+$spacing-lg: 3.125rem;
+
+// Borders
+$border: 21px;
+
+// Code
+$code-font-size: 87.5% !default;
+$code-color: $primary !default;
+
+$kbd-padding-y: 0.3rem !default;
+$kbd-padding-x: 0.35rem !default;
+$kbd-font-size: $code-font-size !default;
+$kbd-color: $color-primary !default;
+$kbd-bg: $color-grey !default;
+
+$pre-color: $color-grey !default;
+$pre-scrollable-max-height: 340px !default;

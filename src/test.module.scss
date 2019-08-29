@@ -1,0 +1,10 @@
+@import "../src/scss/variables";
+.test {
+    background-color: $bg-lorem;
+    &__lorem {
+        border: 3px solid red;
+    }
+    .lorem {
+
+    }
+}

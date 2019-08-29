@@ -1,0 +1,77 @@
+@import "./variables";
+.tableContainer {
+  max-width: 100%;
+  overflow-y: hidden;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: $spacing-sm $spacing-0 $spacing-md;
+  caption {
+    margin-bottom: 20px;
+  }
+  tr {
+    border-bottom: 1px solid $color-lighten-grey;
+    &:first-of-type {
+      border-bottom: 2px solid $color-lighten-grey;
+    }
+  }
+  thead {
+    tr {
+      border-bottom: 2px solid $color-lighten-grey;
+      background-image: none !important;
+    }
+    & + tbody {
+      tr {
+        &:first-of-type {
+          border-bottom: 1px solid $color-lighten-grey;
+        }
+      }
+    }
+  }
+  th {
+    text-align: left;
+    font-size: 0.75rem;
+    line-height: 1.17;
+    padding: $spacing-sm;
+    color: $color-grey-darken;
+  }
+  td {
+    color: $color-default;
+    text-align: left;
+    padding: $spacing-sm;
+    font-family: $font-arial;
+    max-width: 50%;
+  }
+}
+
+.tableBorder {
+  border: 1px solid $color-lighten-grey;
+  td,
+  th {
+    border: 1px solid $color-lighten-grey;
+  }
+}
+.tableBorderless {
+  border: none;
+  & * {
+    border: none !important;
+  }
+}
+.tableHover {
+  tr {
+    transition: all ease-in 0.3s;
+    &:hover {
+      background-image: linear-gradient(
+        to left,
+        rgba(158, 207, 250, 0),
+        rgba(158, 207, 250, 0.25) 51%,
+        rgba(158, 207, 250, 0)
+      );
+    }
+  }
+  td {
+    transition: all ease-in 0.3s;
+    cursor: pointer;
+  }
+}
