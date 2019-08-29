@@ -1,6 +1,6 @@
 {
   "name": "@sfp/tables",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "> TODO: description",
   "author": "sandrafp <sandrasdfp@gmail.com>",
   "homepage": "https://github.com/sandrafp/app-react-doc",
@@ -10,12 +10,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sandrafp/app-react-doc"
+    "url": "git+https://github.com/sandrafp/app-react-doc.git"
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
     "url": "https://github.com/sandrafp/app-react-doc/issues"
-  }
+  },
+  "main": "index.js"
 }
