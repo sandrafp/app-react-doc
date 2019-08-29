@@ -4,7 +4,7 @@
   "description": "> TODO: description",
   "author": "sandrafp <sandrasdfp@gmail.com>",
   "homepage": "https://github.com/sandrafp/app-react-doc",
-  "license": "ISC",
+  "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
@@ -18,5 +18,6 @@
   "bugs": {
     "url": "https://github.com/sandrafp/app-react-doc/issues"
   },
-  "main": "index.js"
+  "main": "index.js",
+  "gitHead": "61da5a9f65bf4c937bda94e12f7e971a0032daa2"
 }
