@@ -1,5 +1,6 @@
 {
-  "name": "app-react-test",
+  "name": "app-react-doc",
+  "author": "sandra fernandez",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -38,5 +39,22 @@
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
     "lerna": "^3.16.4"
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandrafp/app-react-doc.git"
+  },
+  "keywords": [
+    "package"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sandrafp/app-react-doc/issues"
+  },
+  "homepage": "https://github.com/sandrafp/app-react-doc#readme"
 }

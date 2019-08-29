@@ -1,6 +1,7 @@
 {
   "packages": ["src/components/*"],
   "version": "independent",
+  "npmClient": "npm",
   "command": {
     "publish": {
       "conventionalCommits": true
