@@ -1,7 +1,12 @@
 {
   "name": "@sfp/tables",
   "version": "1.0.4",
-  "description": "> TODO: description",
+  "description": "> TODO: description ",
+  "keywords": [
+    "react",
+    "design",
+    "ui"
+  ],
   "author": "sandrafp <sandrasdfp@gmail.com>",
   "homepage": "https://github.com/sandrafp/app-react-doc",
   "license": "MIT",
@@ -19,5 +24,5 @@
     "url": "https://github.com/sandrafp/app-react-doc/issues"
   },
   "main": "index.js",
-  "gitHead": "61da5a9f65bf4c937bda94e12f7e971a0032daa2"
+  "gitHead": "068b0f199249f1e966a5d4e170a66fd93b9d0fa2"
 }

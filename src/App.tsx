@@ -9,7 +9,7 @@ function App() {
     <div className={`${styles.test__lorem} ${styles.test}`}>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p className={styles.text}>
+        <p className={`styles.text`}>
           <code>Hola Mundo</code> <br/>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et voluptas repellat tempore nihil, fuga pariatur illum asperiores praesentium porro cupiditate obcaecati commodi quidem magni id doloremque culpa maiores vel? Temporibus.
         </p>
@@ -21,6 +21,7 @@ function App() {
         >
           Learn React
         </a>
+        <input type="checkbox" name="vehicle1" value="Bike"></input>
       </header>
       <Table>
         <caption>Table description</caption>
