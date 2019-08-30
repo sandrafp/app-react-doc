@@ -4,7 +4,9 @@
   "npmClient": "npm",
   "command": {
     "publish": {
-      "conventionalCommits": true
+      "conventionalCommits": true,
+      "message": "chore(release): :bookmark: publish %s",
+      "npmClient": "npm"
     },
     "version": {
       "message": "chore(release): release"
